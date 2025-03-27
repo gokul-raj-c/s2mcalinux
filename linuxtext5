@@ -1,0 +1,55 @@
+mits@mits-H610M-H-V2-DDR4:~$ uname
+Linux
+mits@mits-H610M-H-V2-DDR4:~$ uname -r
+6.8.0-52-generic
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul$ ls
+file1
+mits@mits-H610M-H-V2-DDR4:~/gokul$ cp file1 file2
+mits@mits-H610M-H-V2-DDR4:~/gokul$ ls
+file1  file2
+
+write a shell script to add two floating point numbers
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul$ gedit expr.sh
+mits@mits-H610M-H-V2-DDR4:~/gokul$ echo "125.56789432/225.1235678"
+125.56789432/225.1235678
+mits@mits-H610M-H-V2-DDR4:~/gokul$ echo "125.56789432/225.1235678|bc"
+125.56789432/225.1235678|bc
+mits@mits-H610M-H-V2-DDR4:~/gokul$ echo "125.56789432/225.1235678" | bc
+0
+mits@mits-H610M-H-V2-DDR4:~/gokul$ echo "scale=3;125.56789432/225.1235678" | bc
+.557
+mits@mits-H610M-H-V2-DDR4:~/gokul$ echo "scale=10;125.56789432/225.1235678" | bc
+.5577732067
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul$ ps
+    PID TTY          TIME CMD
+   4182 pts/0    00:00:00 bash
+   9697 pts/0    00:00:00 ps
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul$ ssh
+usage: ssh [-46AaCfGgKkMNnqsTtVvXxYy] [-B bind_interface]
+           [-b bind_address] [-c cipher_spec] [-D [bind_address:]port]
+           [-E log_file] [-e escape_char] [-F configfile] [-I pkcs11]
+           [-i identity_file] [-J [user@]host[:port]] [-L address]
+           [-l login_name] [-m mac_spec] [-O ctl_cmd] [-o option] [-p port]
+           [-Q query_option] [-R address] [-S ctl_path] [-W host:port]
+           [-w local_tun[:remote_tun]] destination [command [argument ...]]
+mits@mits-H610M-H-V2-DDR4:~/gokul$ scp
+usage: scp [-346ABCOpqRrsTv] [-c cipher] [-D sftp_server_path] [-F ssh_config]
+           [-i identity_file] [-J destination] [-l limit]
+           [-o ssh_option] [-P port] [-S program] source ... target
+
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul$ ssh-keygen
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/mits/.ssh/id_rsa): ^C
+
+
+

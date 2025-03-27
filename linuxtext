@@ -1,0 +1,493 @@
+mits@mits-H610M-H-V2-DDR4:~$ history
+2010  cat -n india
+ 2011  cat >> india
+ 2012  cat india
+ 2013  cat >> india
+ 2014  cat india
+ 2015  cat -n india
+ 2016  man head
+ 2017  head india
+ 2018  man head
+ 2019  head -3 india
+ 2020  head -n 3 india
+ 2021  tail india
+ 2022  tail -5 india
+ 2023  cat india | head -3
+ 2024  cat -6
+ 2025  cat -6 india | tail -2
+ 2026  cat 6 india | tail -2
+ 2027  clear
+ 2028  cat india
+ 2029  cat -n india | tail 7 | head 2 | cat
+ 2030  clear
+ 2031  cat -n india | tail -7 | head -2 | cat
+ 2032  cat india
+ 2033  clear
+ 2034  cat -n india
+ 2035  cat -n india | head -6 | tail -2
+ 2036  echo "god is love"
+ 2037  man echo
+ 2038  echo -n "god is love"
+ 2039  man echo
+ 2040  echo -e "god\nis\nlove"
+ 2041  history
+ 2042  pwd
+ 2043  man ls
+ 2044  ls
+ 2045  clear
+ 2046  history
+
+
+mits@mits-H610M-H-V2-DDR4:~$ pwd
+/home/mits
+
+
+mits@mits-H610M-H-V2-DDR4:~$ man ls
+NAME
+       ls - list directory contents
+
+SYNOPSIS
+       ls [OPTION]... [FILE]...
+
+DESCRIPTION
+       List  information  about the FILEs (the current directory by default).  Sort entries alphabetically if none of -cftuvSUX nor --sort
+       is specified.
+
+       Mandatory arguments to long options are mandatory for short options too.
+
+       -a, --all
+              do not ignore entries starting with .
+
+       -A, --almost-all
+              do not list implied . and ..
+
+       --author
+              with -l, print the author of each file
+
+       -b, --escape
+              print C-style escapes for nongraphic characters
+
+       --block-size=SIZE
+              with -l, scale sizes by SIZE when printing them; e.g., '--block-size=M'; see SIZE format below
+
+       -B, --ignore-backups
+              do not list implied entries ending with ~
+
+       -c     with -lt: sort by, and show, ctime (time of last modification of file status information); with -l: show ctime and  sort  by
+              name; otherwise: sort by ctime, newest first
+
+       -C     list entries by columns
+
+
+mits@mits-H610M-H-V2-DDR4:~$ ls
+document.docx  document.pdf  india  snap
+
+
+mits@mits-H610M-H-V2-DDR4:~$ cat india
+india is my country
+i love my country
+all indians are my brothers and sisters
+india, officially the Republic of India,[j][20] is a country in South Asia. 
+ It is the seventh-largest country by area
+since its independence in 1947, the world's most populous democracy
+Bounded by the Indian Ocean on the south
+he Arabian Sea on the southwest
+Bay of Bengal on the southeast
+shares land borders with Pakistan to the west
+China, Nepal, and Bhutan to the north
+
+mits@mits-H610M-H-V2-DDR4:~$ cat -n  india
+     1	india is my country
+     2	i love my country
+     3	all indians are my brothers and sisters
+     4	india, officially the Republic of India,[j][20] is a country in South Asia. 
+     5	 It is the seventh-largest country by area
+     6	since its independence in 1947, the world's most populous democracy
+     7	Bounded by the Indian Ocean on the south
+     8	he Arabian Sea on the southwest
+     9	Bay of Bengal on the southeast
+    10	shares land borders with Pakistan to the west
+    11	China, Nepal, and Bhutan to the north
+
+
+mits@mits-H610M-H-V2-DDR4:~$ echo "god is love"
+god is love
+mits@mits-H610M-H-V2-DDR4:~$ echo -e "god\nis\nlove"
+god
+is
+love
+
+
+mits@mits-H610M-H-V2-DDR4:~$ head india
+india is my country
+i love my country
+all indians are my brothers and sisters
+india, officially the Republic of India,[j][20] is a country in South Asia. 
+ It is the seventh-largest country by area
+since its independence in 1947, the world's most populous democracy
+Bounded by the Indian Ocean on the south
+he Arabian Sea on the southwest
+Bay of Bengal on the southeast
+shares land borders with Pakistan to the west
+
+mits@mits-H610M-H-V2-DDR4:~$ head -5 india
+india is my country
+i love my country
+all indians are my brothers and sisters
+india, officially the Republic of India,[j][20] is a country in South Asia. 
+ It is the seventh-largest country by area
+
+
+mits@mits-H610M-H-V2-DDR4:~$ tail india
+i love my country
+all indians are my brothers and sisters
+india, officially the Republic of India,[j][20] is a country in South Asia. 
+ It is the seventh-largest country by area
+since its independence in 1947, the world's most populous democracy
+Bounded by the Indian Ocean on the south
+he Arabian Sea on the southwest
+Bay of Bengal on the southeast
+shares land borders with Pakistan to the west
+China, Nepal, and Bhutan to the north
+
+mits@mits-H610M-H-V2-DDR4:~$ tail -5 india
+Bounded by the Indian Ocean on the south
+he Arabian Sea on the southwest
+Bay of Bengal on the southeast
+shares land borders with Pakistan to the west
+China, Nepal, and Bhutan to the north
+
+
+mits@mits-H610M-H-V2-DDR4:~$ ls -R
+.:
+document.docx  document.pdf  india  snap
+
+./snap:
+firefox  snapd-desktop-integration
+
+./snap/firefox:
+5273  common  current
+
+./snap/firefox/5273:
+
+./snap/firefox/common:
+
+./snap/snapd-desktop-integration:
+253  common  current
+
+./snap/snapd-desktop-integration/253:
+
+./snap/snapd-desktop-integration/common:
+
+
+mits@mits-H610M-H-V2-DDR4:~$ ls -l
+total 252
+-rw-rw-r-- 1 mits mits  26431 Feb  5 11:36 document.docx
+-rw-rw-r-- 1 mits mits 218271 Feb  5 10:16 document.pdf
+-rw-rw-r-- 1 mits mits    454 Feb  5 10:48 india
+drwx------ 4 mits mits   4096 Feb  5 10:08 snap
+
+
+mits@mits-H610M-H-V2-DDR4:~$ ls -a
+.              .bash_logout  .config        .fontconfig  .lesshst               .mca.swp      .profile  .sudo_as_admin_successful
+..             .bashrc       document.docx  .gnupg       .local                 .mca.txt.swp  snap      .thunderbird
+.bash_history  .cache        document.pdf   india        .~lock.document.docx#  .mozilla      .ssh
+
+
+mits@mits-H610M-H-V2-DDR4:~$ ls -al
+total 364
+drwxr-x--- 11 mits mits   4096 Feb  5 11:51 .
+drwxr-xr-x  4 root root   4096 Sep 27 10:09 ..
+-rw-------  1 mits mits  26771 Jan  7 12:00 .bash_history
+-rw-r--r--  1 mits mits    220 Jan 24  2024 .bash_logout
+-rw-r--r--  1 mits mits   3771 Jan 24  2024 .bashrc
+drwx------ 16 mits mits   4096 Oct 10 15:30 .cache
+drwx------ 18 mits mits   4096 Feb  5 10:06 .config
+-rw-rw-r--  1 mits mits  26431 Feb  5 11:36 document.docx
+-rw-rw-r--  1 mits mits 218271 Feb  5 10:16 document.pdf
+drwxr-xr-x  2 mits mits   4096 Feb 13  2024 .fontconfig
+drwx------  2 mits mits   4096 Oct  4 15:01 .gnupg
+-rw-rw-r--  1 mits mits    454 Feb  5 10:48 india
+-rw-------  1 mits mits     34 Feb  5 11:51 .lesshst
+drwx------  3 mits mits   4096 Jan 24  2024 .local
+-rw-rw-r--  1 mits mits     84 Feb  5 11:36 .~lock.document.docx#
+-rw-------  1 mits mits  12288 Apr 15  2024 .mca.swp
+-rw-------  1 mits mits  12288 Apr 15  2024 .mca.txt.swp
+drwx------  3 mits mits   4096 Oct 10 15:30 .mozilla
+-rw-r--r--  1 mits mits    807 Jan 24  2024 .profile
+drwx------  4 mits mits   4096 Feb  5 10:08 snap
+drwx------  2 mits mits   4096 Mar  4  2024 .ssh
+-rw-r--r--  1 mits mits      0 Jan 24  2024 .sudo_as_admin_successful
+drwx------  6 mits mits   4096 Oct 10 15:30 .thunderbird
+
+
+mits@mits-H610M-H-V2-DDR4:~$ ls -t
+document.docx  india  document.pdf  snap
+
+
+mits@mits-H610M-H-V2-DDR4:~$ ls -r
+snap  india  document.pdf  document.docx
+
+
+mits@mits-H610M-H-V2-DDR4:~$ cat > kerala
+gods own country
+i love kerala
+14th smallest Indian state
+famous for its enchanting backwaters, lush tea plantations                                               
+^C
+mits@mits-H610M-H-V2-DDR4:~$ cat india kerala
+india is my country
+i love my country
+all indians are my brothers and sisters
+india, officially the Republic of India,[j][20] is a country in South Asia. 
+ It is the seventh-largest country by area
+since its independence in 1947, the world's most populous democracy
+Bounded by the Indian Ocean on the south
+he Arabian Sea on the southwest
+Bay of Bengal on the southeast
+shares land borders with Pakistan to the west
+China, Nepal, and Bhutan to the north
+gods own country
+i love kerala
+14th smallest Indian state
+famous for its enchanting backwaters, lush tea plantations
+mits@mits-H610M-H-V2-DDR4:~$ cat india kerala >> f1
+mits@mits-H610M-H-V2-DDR4:~$ cat f1
+india is my country
+i love my country
+all indians are my brothers and sisters
+india, officially the Republic of India,[j][20] is a country in South Asia. 
+ It is the seventh-largest country by area
+since its independence in 1947, the world's most populous democracy
+Bounded by the Indian Ocean on the south
+he Arabian Sea on the southwest
+Bay of Bengal on the southeast
+shares land borders with Pakistan to the west
+China, Nepal, and Bhutan to the north
+gods own country
+i love kerala
+14th smallest Indian state
+famous for its enchanting backwaters, lush tea plantations
+mits@mits-H610M-H-V2-DDR4:~$ mkdir s2mca
+mits@mits-H610M-H-V2-DDR4:~$ ls
+document.docx  document.odt  document.pdf  f1  india  kerala  linuxtext  s2mca  snap
+mits@mits-H610M-H-V2-DDR4:~$ pwd
+/home/mits
+
+
+mits@mits-H610M-H-V2-DDR4:~$ mkdir /home/mits/s2mca/new
+mits@mits-H610M-H-V2-DDR4:~$ cd s2mca
+mits@mits-H610M-H-V2-DDR4:~/s2mca$ mkdir linux
+mits@mits-H610M-H-V2-DDR4:~/s2mca$ pwd
+/home/mits/s2mca
+mits@mits-H610M-H-V2-DDR4:~/s2mca$ ls
+linux  new
+mits@mits-H610M-H-V2-DDR4:~/s2mca$ cd ..
+mits@mits-H610M-H-V2-DDR4:~$ pwd
+/home/mits
+mits@mits-H610M-H-V2-DDR4:~$ mkdir ~/s3mca
+mits@mits-H610M-H-V2-DDR4:~$ 
+
+mits@mits-H610M-H-V2-DDR4:~$ ls
+document.docx  document.odt  document.pdf  f1  india  kerala  linuxtext  s2mca  s3mca  snap
+
+
+mits@mits-H610M-H-V2-DDR4:~$ pwd
+/home/mits
+mits@mits-H610M-H-V2-DDR4:~$ ls
+document.docx  document.odt  document.pdf  f1  india  kerala  linuxtext  s2mca  s3mca  snap
+mits@mits-H610M-H-V2-DDR4:~$ rmdir s3mca
+mits@mits-H610M-H-V2-DDR4:~$ ls
+document.docx  document.odt  document.pdf  f1  india  kerala  linuxtext  s2mca  snap
+
+
+mits@mits-H610M-H-V2-DDR4:~$ cd s2mca
+mits@mits-H610M-H-V2-DDR4:~/s2mca$ cat > f1
+hi welcome
+^C
+
+mits@mits-H610M-H-V2-DDR4:~/s2mca$ touch apple orange
+mits@mits-H610M-H-V2-DDR4:~/s2mca$ ls
+apple  f1  linux  new  orange
+
+mits@mits-H610M-H-V2-DDR4:~/s2mca$ mv f1 f2
+mits@mits-H610M-H-V2-DDR4:~/s2mca$ cat f2
+hi welcome
+mits@mits-H610M-H-V2-DDR4:~/s2mca$ cat f1
+cat: f1: No such file or directory
+
+mits@mits-H610M-H-V2-DDR4:~/s2mca$ ls
+apple  f2  linux  new  orange
+
+
+mits@mits-H610M-H-V2-DDR4:~/s2mca$ cd ..
+mits@mits-H610M-H-V2-DDR4:~$ pwd
+/home/mits
+mits@mits-H610M-H-V2-DDR4:~$ touch apple
+mits@mits-H610M-H-V2-DDR4:~$ mkdir mca
+mits@mits-H610M-H-V2-DDR4:~$ cd mca
+mits@mits-H610M-H-V2-DDR4:~/mca$ pwd
+/home/mits/mca
+mits@mits-H610M-H-V2-DDR4:~/mca$ mkdir placement
+mits@mits-H610M-H-V2-DDR4:~/mca$ ls
+placement
+
+mits@mits-H610M-H-V2-DDR4:~/mca$ pwd
+/home/mits/mca
+mits@mits-H610M-H-V2-DDR4:~/mca$ cd ..
+mits@mits-H610M-H-V2-DDR4:~$ touch orange
+mits@mits-H610M-H-V2-DDR4:~$ ls
+document.docx  document.odt  document.pdf  f1  india  kerala  linuxtext  mca  orange  s2mca  snap
+mits@mits-H610M-H-V2-DDR4:~$ mv orange mca/placement/
+mits@mits-H610M-H-V2-DDR4:~$ cd mca
+mits@mits-H610M-H-V2-DDR4:~/mca$ cd placement
+mits@mits-H610M-H-V2-DDR4:~/mca/placement$ ls
+apple  orange
+mits@mits-H610M-H-V2-DDR4:~/mca/placement$ cd ..
+mits@mits-H610M-H-V2-DDR4:~/mca$ cd ..
+mits@mits-H610M-H-V2-DDR4:~$ ls
+document.docx  document.odt  document.pdf  f1  india  kerala  linuxtext  mca  s2mca  snap
+
+
+mits@mits-H610M-H-V2-DDR4:~$ wc india
+ 11  79 454 india
+mits@mits-H610M-H-V2-DDR4:~$ wc -l india
+11 india
+mits@mits-H610M-H-V2-DDR4:~$ wc -w india
+79 india
+mits@mits-H610M-H-V2-DDR4:~$ wc -c india
+454 india
+
+mits@mits-H610M-H-V2-DDR4:~$ wc india | cat > grapes
+mits@mits-H610M-H-V2-DDR4:~$ cat grapes
+ 11  79 454 india
+mits@mits-H610M-H-V2-DDR4:~$ wc india >> mint
+mits@mits-H610M-H-V2-DDR4:~$ cat mint
+ 11  79 454 india
+
+
+mits@mits-H610M-H-V2-DDR4:~$ grep "country" india
+india is my country
+i love my country
+india, officially the Republic of India,[j][20] is a country in South Asia. 
+ It is the seventh-largest country by area
+mits@mits-H610M-H-V2-DDR4:~$ grep -c "country" india
+4
+
+
+
+mits@mits-H610M-H-V2-DDR4:~$ man grep
+mits@mits-H610M-H-V2-DDR4:~$ cat >> india
+india is my COUNTRY
+india is my Country
+^C
+mits@mits-H610M-H-V2-DDR4:~$ cat india
+india is my country
+i love my country
+all indians are my brothers and sisters
+india, officially the Republic of India,[j][20] is a country in South Asia. 
+ It is the seventh-largest country by area
+since its independence in 1947, the world's most populous democracy
+Bounded by the Indian Ocean on the south
+he Arabian Sea on the southwest
+Bay of Bengal on the southeast
+shares land borders with Pakistan to the west
+China, Nepal, and Bhutan to the north
+india is my COUNTRY
+india is my Country
+
+mits@mits-H610M-H-V2-DDR4:~$ grep "country" india
+india is my country
+i love my country
+india, officially the Republic of India,[j][20] is a country in South Asia. 
+ It is the seventh-largest country by area
+
+mits@mits-H610M-H-V2-DDR4:~$ grep -i "country" india
+india is my country
+i love my country
+india, officially the Republic of India,[j][20] is a country in South Asia. 
+ It is the seventh-largest country by area
+india is my COUNTRY
+india is my Country
+
+
+mits@mits-H610M-H-V2-DDR4:~$ grep -v "country" india
+all indians are my brothers and sisters
+since its independence in 1947, the world's most populous democracy
+Bounded by the Indian Ocean on the south
+he Arabian Sea on the southwest
+Bay of Bengal on the southeast
+shares land borders with Pakistan to the west
+China, Nepal, and Bhutan to the north
+india is my COUNTRY
+india is my Country
+
+
+mits@mits-H610M-H-V2-DDR4:~$ touch f4
+mits@mits-H610M-H-V2-DDR4:~$ ls
+ document.docx   document.pdf   f4       india    linuxtext       mca    s2mca   yellow
+ document.odt    f1             grapes   kerala  'linuxtext(1)'   mint   snap
+mits@mits-H610M-H-V2-DDR4:~$ rm f4
+mits@mits-H610M-H-V2-DDR4:~$ ls
+ document.docx   document.odt   document.pdf   f1   grapes   india   kerala   linuxtext  'linuxtext(1)'   mca   mint   s2mca   snap   yellow
+
+mits@mits-H610M-H-V2-DDR4:~$ rm mca
+rm: cannot remove 'mca': Is a directory
+mits@mits-H610M-H-V2-DDR4:~$ rm -r mca
+mits@mits-H610M-H-V2-DDR4:~$ ls
+ document.docx   document.odt   document.pdf   f1   grapes   india   kerala   linuxtext  'linuxtext(1)'   mint   s2mca   snap   yellow
+
+
+cat exmple
+unix is great os. unix was developed in Bell labs.
+learn operating system.
+Unix linux which one you choose.
+uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+mits@mits-H610M-H-V2-DDR4:~$ grep -c "unix" exmple
+2
+mits@mits-H610M-H-V2-DDR4:~$ grep -h "unix" exmple
+unix is great os. unix was developed in Bell labs.
+uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+mits@mits-H610M-H-V2-DDR4:~$ grep -i "unix" exmple
+unix is great os. unix was developed in Bell labs.
+Unix linux which one you choose.
+uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+mits@mits-H610M-H-V2-DDR4:~$ grep -l "unix" exmple
+exmple
+mits@mits-H610M-H-V2-DDR4:~$ grep -n "unix" exmple
+1:unix is great os. unix was developed in Bell labs.
+4:uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+mits@mits-H610M-H-V2-DDR4:~$ cat >> exmple
+abcd
+UNIX
+UniX
+^C
+mits@mits-H610M-H-V2-DDR4:~$ 
+mits@mits-H610M-H-V2-DDR4:~$ grep -v "unix" exmple
+learn operating system.
+Unix linux which one you choose.
+abcd
+UNIX
+UniX
+mits@mits-H610M-H-V2-DDR4:~$ grep -e exp "unix" exmple
+grep: unix: No such file or directory
+mits@mits-H610M-H-V2-DDR4:~$ grep -e exp "unix"
+grep: unix: No such file or directory
+mits@mits-H610M-H-V2-DDR4:~$ grep -e "india" -e "country" india
+india is my country
+i love my country
+all indians are my brothers and sisters
+india, officially the Republic of India,[j][20] is a country in South Asia. 
+ It is the seventh-largest country by area
+india is my COUNTRY
+india is my Country
+mits@mits-H610M-H-V2-DDR4:~$ grep -w "unix" exmple
+unix is great os. unix was developed in Bell labs.
+uNix is easy to learn.unix is a multiuser os.Learn unix .unix is a powerful.
+mits@mits-H610M-H-V2-DDR4:~$ 
+
+mits@mits-H610M-H-V2-DDR4:~$ grep "^unix" exmple
+unix is great os. unix was developed in Bell labs.
+
+mits@mits-H610M-H-V2-DDR4:~$ grep "os$" exmple
+

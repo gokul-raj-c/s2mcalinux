@@ -1,0 +1,174 @@
+mits@mits-H610M-H-V2-DDR4:~$ touch sample.txt
+mits@mits-H610M-H-V2-DDR4:~$ cd mca
+mits@mits-H610M-H-V2-DDR4:~/mca$ touch sample.txt
+mits@mits-H610M-H-V2-DDR4:~/mca$ cd ..
+mits@mits-H610M-H-V2-DDR4:~$  ./ -name sample.txt
+./sample.txt
+./mca/sample.txt
+mits@mits-H610M-H-V2-DDR4:~$ find ./ -name *.txt
+./sample.txt
+./mca/sample.txt
+mits@mits-H610M-H-V2-DDR4:~$ find ./mca -name sample.txt -exec rm -i {} \;
+rm: remove regular empty file './mca/sample.txt'? y
+mits@mits-H610M-H-V2-DDR4:~$ find ./ -name sample.txt
+./sample.txt
+
+mits@mits-H610M-H-V2-DDR4:~$ find ./ -empty
+./s2mca/orange
+./s2mca/new
+./s2mca/apple
+./.local/share/rhythmbox/podcast-timestamp
+./.local/share/sounds
+./.local/share/nautilus/scripts
+./.local/share/nautilus/tracker2-migration-complete
+./.local/share/gnome-settings-daemon/input-sources-converted
+./.local/share/evolution/tasks/trash
+./.local/share/evolution/addressbook/system/photos
+./.local/share/evolution/addressbook/trash
+./.local/share/evolution/memos/trash
+./.local/share/evolution/mail/trash
+./.local/share/evolution/calendar/trash
+./.local/share/ibus-table
+./.local/share/Trash/expunged
+./.local/share/backgrounds
+./.local/share/applications
+./.local/share/gnome-shell/gnome-overrides-migrated
+./.ssh
+./d1/d2/d3
+./d1/d2/d4
+./sample.txt
+
+mits@mits-H610M-H-V2-DDR4:~$ find ./ -perm 664
+./sample2
+./india
+./yellow
+./Screenshots/Screenshot from 2025-02-12 10-44-48.png
+./Screenshots/Screenshot from 2025-02-12 10-45-05.png
+./Assignment-1.odt
+./grapes
+./sample.txt
+./document.pdf
+./capital
+./number
+./f1
+./linuxtext
+./kerala
+./sample
+./document.odt
+./exmple
+./mca/s1mca
+./mca/number
+./mca/s2
+
+mits@mits-H610M-H-V2-DDR4:~$ find . -type d
+.
+./snap
+./snap/firefox
+./snap/firefox/5273
+./snap/firefox/5273/.config
+./snap/firefox/5273/.config/gtk-3.0
+./snap/firefox/5273/.config/ibus
+./snap/firefox/5273/.config/dconf
+./snap/firefox/5273/.config/gtk-2.0
+./snap/firefox/5273/.config/pulse
+./snap/firefox/5273/.config/fontconfig
+./snap/firefox/5273/.local
+./snap/firefox/5273/.local/share
+./snap/firefox/5273/.local/share/icons
+./snap/firefox/5273/.local/share/glib-2.0
+./snap/firefox/5273/.local/share/glib-2.0/schemas
+
+
+
+mits@mits-H610M-H-V2-DDR4:~$ cat > sample10.txt
+hello hi welcome
+abcd
+^C
+mits@mits-H610M-H-V2-DDR4:~$ cat > sample11.txt
+hhhh hello
+ggttgtgh
+^C
+mits@mits-H610M-H-V2-DDR4:~$ cat sample10.txt
+hello hi welcome
+abcd
+mits@mits-H610M-H-V2-DDR4:~$ cat sample11.txt
+hhhh hello
+ggttgtgh
+mits@mits-H610M-H-V2-DDR4:~$ find ./ -type f -name "*.txt" -exec grep 'hello' {} \;
+hello hi welcome
+hhhh hello
+
+
+mits@mits-H610M-H-V2-DDR4:~$ find ./ -mtime -1
+./sample1.txt
+./linuxtext3
+./sample10.txt
+./.local/share
+./.local/share/nautilus/tags
+./.local/share/evolution/addressbook/system
+./.local/share/evolution/addressbook/system/contacts.db
+./.local/share/recently-used.xbel
+./.local/share/keyrings
+./.local/share/gnome-shell
+./.local/share/gnome-shell/application_state
+./.local/share/gvfs-metadata
+./.local/share/gvfs-metadata/home
+./.local/share/gvfs-metadata/root
+./.local/share/gvfs-metadata/home-768becc3.log
+./.local/share/gvfs-metadata/root-fed00b11.log
+./sample.txt
+./sample11.txt
+./mca
+./sample2.txt
+
+
+mits@mits-H610M-H-V2-DDR4:~$ find . -type f -exec grep -l "hello" {} \;  //it display filename that contain hello
+./sample1.txt
+./linuxtext3
+./sample10.txt
+./linuxtext2
+./sample11.txt
+./sample2.txt
+
+-------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+mits@mits-H610M-H-V2-DDR4:~$ cd mca
+mits@mits-H610M-H-V2-DDR4:~/mca$ ls
+number  s1mca  s2
+mits@mits-H610M-H-V2-DDR4:~/mca$ touch sample1.txt
+mits@mits-H610M-H-V2-DDR4:~/mca$ touch sample2.txt
+mits@mits-H610M-H-V2-DDR4:~/mca$ touch sample3.txt
+mits@mits-H610M-H-V2-DDR4:~/mca$ ls
+number  s1mca  s2  sample1.txt  sample2.txt  sample3.txt
+
+
+mits@mits-H610M-H-V2-DDR4:~/mca$ chmod u+rwx sample1.txt
+mits@mits-H610M-H-V2-DDR4:~/mca$ ls -l
+total 12
+-rw-rw-r-- 1 mits mits 21 Feb 17 14:40 number
+-rw-rw-r-- 1 mits mits 74 Feb 17 14:34 s1mca
+-rw-rw-r-- 1 mits mits 68 Feb 17 14:35 s2
+-rwxrw-r-- 1 mits mits  0 Feb 20 11:47 sample1.txt
+-rw-rw-r-- 1 mits mits  0 Feb 20 11:47 sample2.txt
+-rw-rw-r-- 1 mits mits  0 Feb 20 11:47 sample3.txt
+mits@mits-H610M-H-V2-DDR4:~/mca$ chmod u-wx sample1.txt
+mits@mits-H610M-H-V2-DDR4:~/mca$ ls -l
+total 12
+-rw-rw-r-- 1 mits mits 21 Feb 17 14:40 number
+-rw-rw-r-- 1 mits mits 74 Feb 17 14:34 s1mca
+-rw-rw-r-- 1 mits mits 68 Feb 17 14:35 s2
+-r--rw-r-- 1 mits mits  0 Feb 20 11:47 sample1.txt
+-rw-rw-r-- 1 mits mits  0 Feb 20 11:47 sample2.txt
+-rw-rw-r-- 1 mits mits  0 Feb 20 11:47 sample3.txt
+mits@mits-H610M-H-V2-DDR4:~/mca$ chmod 647 sample2.txt
+mits@mits-H610M-H-V2-DDR4:~/mca$ ls -l
+total 12
+-rw-rw-r-- 1 mits mits 21 Feb 17 14:40 number
+-rw-rw-r-- 1 mits mits 74 Feb 17 14:34 s1mca
+-rw-rw-r-- 1 mits mits 68 Feb 17 14:35 s2
+-r--rw-r-- 1 mits mits  0 Feb 20 11:47 sample1.txt
+-rw-r--rwx 1 mits mits  0 Feb 20 11:47 sample2.txt
+-rw-rw-r-- 1 mits mits  0 Feb 20 11:47 sample3.txt
+
+
+

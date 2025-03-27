@@ -1,0 +1,256 @@
+mits@mits-H610M-H-V2-DDR4:~$ cat > state
+andhra pradesh
+arunachal pradesh
+assam
+bihar
+Chhattisgarh
+india
+^C
+
+mits@mits-H610M-H-V2-DDR4:~$ cut -b 1,2,3,4 state
+andh
+arun
+assa
+biha
+Chha
+indi
+
+mits@mits-H610M-H-V2-DDR4:~$ cut -b 1-3,6-7 state
+anda 
+aruch
+ass
+bih
+Chhti
+ind
+
+mits@mits-H610M-H-V2-DDR4:~$ cut -b 3- state
+dhra pradesh
+unachal pradesh
+sam
+har
+hattisgarh
+dia
+
+mits@mits-H610M-H-V2-DDR4:~$ cut -b -5 state
+andhr
+aruna
+assam
+bihar
+Chhat
+india
+
+mits@mits-H610M-H-V2-DDR4:~$ cut -c 2,5,7 state
+nr 
+rah
+sm
+ir
+hti
+na
+
+mits@mits-H610M-H-V2-DDR4:~$ cut -c 4-7 state
+hra 
+nach
+am
+ar
+atti
+ia
+
+mits@mits-H610M-H-V2-DDR4:~$ cut -c 4- state
+hra pradesh
+nachal pradesh
+am
+ar
+attisgarh
+ia
+
+mits@mits-H610M-H-V2-DDR4:~$ cut -c -4 state
+andh
+arun
+assa
+biha
+Chha
+indi
+
+mits@mits-H610M-H-V2-DDR4:~$ cut -f 1 state
+andhra pradesh
+arunachal pradesh
+assam
+bihar
+Chhattisgarh
+india
+
+mits@mits-H610M-H-V2-DDR4:~$ cut -d " " -f 1 state
+andhra
+arunachal
+assam
+bihar
+Chhattisgarh
+india
+
+mits@mits-H610M-H-V2-DDR4:~$ cut -d " " -f 1-3 state
+andhra pradesh
+arunachal pradesh
+assam
+bihar
+Chhattisgarh
+india
+india is my
+
+mits@mits-H610M-H-V2-DDR4:~$ cat >> state
+hello:my:name:is
+^C
+mits@mits-H610M-H-V2-DDR4:~$ cut -d ":" -f 1-3 state
+andhra pradesh
+arunachal pradesh
+assam
+bihar
+Chhattisgarh
+india
+india is my country
+hello:my:name
+mits@mits-H610M-H-V2-DDR4:~$ cut -d ":" -f 1,2 state
+andhra pradesh
+arunachal pradesh
+assam
+bihar
+Chhattisgarh
+india
+india is my country
+hello:my
+
+//not correct
+mits@mits-H610M-H-V2-DDR4:~$ ls -l | cut -b 38-42 | cat > sample
+mits@mits-H610M-H-V2-DDR4:~$ cat sample
+
+10:26
+10:21
+10:22
+11:36
+11:59
+10:16
+10:35
+13:29
+14:15
+14:22
+13:27
+11:09
+11:41
+14:16
+15:30
+11:48
+10:45
+10:08
+11:40
+14:14
+ 
+
+mits@mits-H610M-H-V2-DDR4:~$ expr 12 + 5
+17
+mits@mits-H610M-H-V2-DDR4:~$ expr 12 - 5
+7
+
+//  in linux \* is multiplication
+mits@mits-H610M-H-V2-DDR4:~$ expr 12 \* 5
+60
+
+mits@mits-H610M-H-V2-DDR4:~$ a=12
+mits@mits-H610M-H-V2-DDR4:~$ b=6
+mits@mits-H610M-H-V2-DDR4:~$ sum=`expr $a + $b`
+mits@mits-H610M-H-V2-DDR4:~$ echo $sum
+18
+
+
+mits@mits-H610M-H-V2-DDR4:~$ cat > number
+1
+2
+3
+4
+5
+^C
+mits@mits-H610M-H-V2-DDR4:~$ cat > state
+arunachal pradesh
+assam
+andhra pradesh
+bihar
+chattisgrah
+^C
+mits@mits-H610M-H-V2-DDR4:~$ cat > capital
+itanagar
+dispur
+hyderabad
+patna
+raipur
+^C
+
+mits@mits-H610M-H-V2-DDR4:~$ cat number
+1
+2
+3
+4
+5
+mits@mits-H610M-H-V2-DDR4:~$ cat state
+arunachal pradesh
+assam
+andhra pradesh
+bihar
+chattisgrah
+mits@mits-H610M-H-V2-DDR4:~$ cat capital
+itanagar
+dispur
+hyderabad
+patna
+raipur
+
+mits@mits-H610M-H-V2-DDR4:~$ paste number state capital
+1	arunachal pradesh	itanagar
+2	assam	dispur
+3	andhra pradesh	hyderabad
+4	bihar	patna
+5	chattisgrah	raipur
+mits@mits-H610M-H-V2-DDR4:~$ paste -d "|" number state capital
+1|arunachal pradesh|itanagar
+2|assam|dispur
+3|andhra pradesh|hyderabad
+4|bihar|patna
+5|chattisgrah|raipur
+mits@mits-H610M-H-V2-DDR4:~$ paste -d "," number state capital
+1,arunachal pradesh,itanagar
+2,assam,dispur
+3,andhra pradesh,hyderabad
+4,bihar,patna
+5,chattisgrah,raipur
+mits@mits-H610M-H-V2-DDR4:~$ paste -d "|," number state capital
+1|arunachal pradesh,itanagar
+2|assam,dispur
+3|andhra pradesh,hyderabad
+4|bihar,patna
+5|chattisgrah,raipur
+mits@mits-H610M-H-V2-DDR4:~$ paste -s number state capital
+1	2	3	4	5
+arunachal pradesh	assam	andhra pradesh	bihar	chattisgrah
+itanagar	dispur	hyderabad	patna	raipur
+mits@mits-H610M-H-V2-DDR4:~$ paste -s -d ":" number state capital
+1:2:3:4:5
+arunachal pradesh:assam:andhra pradesh:bihar:chattisgrah
+itanagar:dispur:hyderabad:patna:raipur
+
+
+mits@mits-H610M-H-V2-DDR4:~$ cut -d " " -f 1 state | paste number
+1
+2
+3
+4
+5
+mits@mits-H610M-H-V2-DDR4:~$ cut -d " " -f 1 state | paste number -
+1	arunachal
+2	assam
+3	andhra
+4	bihar
+5	chattisgrah
+mits@mits-H610M-H-V2-DDR4:~$ cut -d " " -f 1 state | paste - number
+arunachal	1
+assam	2
+andhra	3
+bihar	4
+chattisgrah	5
+

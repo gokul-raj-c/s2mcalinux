@@ -1,0 +1,144 @@
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash arithmetic.sh
+enter a and b
+15 6
+sum=21
+diff=9
+pro=90
+quo=2
+mod=3
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash swap.sh
+enter a and b
+8 6
+6 8
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash power.sh
+enter a and b
+6 3
+216
+
+mits@mits-H610M-H-V2-DDR4:~/gokul$ bash expr.sh
+150
+
+mits@mits-H610M-H-V2-DDR4:~/gokul$ bash floatadd.sh
+enter a and b
+4.5 6.7
+11.2
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul$ bash strings.sh
+enter a sentence
+welcome
+length=7
+enter string1
+gokul
+enter string2
+raj
+after concatenate=gokulraj
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul$ bash interest.sh
+enter amount
+5600
+enter rate of interest
+4
+enter no of years
+5
+1120
+
+
+mits@mits-H610M-H-V2-DDR4:~$ bash circleq.sh
+enter radius
+5
+area of traingle:78.50
+perimeter of traingle:31.40
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash rectangleq.sh
+enter length of rectangle
+6
+enter breadth of rectangle
+5
+area of rectangle:30
+perimeter of rectangle:22
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash sqaureq.sh
+enter side of square
+5
+area of traingle:25
+perimeter of traingle:20
+
+--------------------------------------------------------------------------------------------------------------------------
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash large2.sh
+enter value 1
+4
+enter value 2
+5
+5 is greater
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash large2.sh
+enter value 1
+12
+enter value 2
+5
+12 is greater
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash large2.sh
+enter value 1
+8
+enter value 2
+8
+both equal
+
+
+
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash salary.sh
+enter employee name
+1200
+enter basic salary
+^C
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash salary.sh
+enter employee name
+gokul
+enter basic salary
+1200
+name:gokul
+gross salary:hra=2400
+
+
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash large3.sh
+enter value 1
+4
+enter value 2
+5
+enter value 3
+6
+6 is greater
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash large3.sh
+enter value 1
+8
+enter value 2
+5
+enter value 3
+4
+8 is greater
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash large3.sh
+enter value 1
+4
+enter value 2
+10
+enter value 3
+6
+10 is greater
+
+
+
+
+
+
+
+

@@ -1,0 +1,240 @@
+mits@mits-H610M-H-V2-DDR4:~$ tree /bin/
+Command 'tree' not found, but can be installed with:
+sudo snap install tree  # version 2.1.3+pkg-5852, or
+sudo apt  install tree  # version 2.0.2-1
+See 'snap info tree' for additional versions.
+mits@mits-H610M-H-V2-DDR4:~$ sudo apt install tree
+[sudo] password for mits: 
+Sorry, try again.
+[sudo] password for mits: 
+Reading package lists... Done
+Building dependency tree... Done
+Reading state information... Done
+The following NEW packages will be installed:
+  tree
+0 upgraded, 1 newly installed, 0 to remove and 252 not upgraded.
+Need to get 47.9 kB of archives.
+After this operation, 116 kB of additional disk space will be used.
+Get:1 http://in.archive.ubuntu.com/ubuntu jammy/universe amd64 tree amd64 2.0.2-1 [47.9 kB]
+Fetched 47.9 kB in 1s (41.5 kB/s)
+Selecting previously unselected package tree.
+(Reading database ... 214349 files and directories currently installed.)
+Preparing to unpack .../tree_2.0.2-1_amd64.deb ...
+Unpacking tree (2.0.2-1) ...
+Setting up tree (2.0.2-1) ...
+Processing triggers for man-db (2.10.2-1) ...
+mits@mits-H610M-H-V2-DDR4:~$ tree /bin/
+
+mits@mits-H610M-H-V2-DDR4:~$ tree /bin/
+/bin/
+├── [
+├── aa-enabled
+├── aa-exec
+├── aa-features-abi
+├── ab
+├── aconnect
+├── acpidbg
+├── acpi_listen
+├── add-apt-repository
+├── addpart
+├── addr2line -> x86_64-linux-gnu-addr2line
+├── airscan-discover
+├── alsabat
+├── alsaloop
+├── alsamixer
+├── alsatplg
+├── alsaucm
+├── amidi
+├── amixer
+├── apg
+├── apgbfm
+├── aplay
+├── aplaymidi
+├── apport-bug
+├── zipdetails
+├── zipgrep
+├── zipinfo
+├── zipnote
+├── zipsplit
+├── zjsdecode
+├── zless
+├── zmore
+├── znew
+├── zstd
+├── zstdcat -> zstd
+├── zstdgrep
+├── zstdless
+└── zstdmt -> zstd
+
+1 directory, 1575 files
+
+
+
+mits@mits-H610M-H-V2-DDR4:~$ ls -l
+drwxrwxr-x 2 mits mits    4096 Feb 20 11:47  mca
+-rw-rw-r-- 1 mits mits      18 Feb  6 14:16  mint
+-rw-rw-r-- 1 mits mits     148 Mar  5 11:22  myfile1.txt
+-rw-rw-r-- 1 mits mits     148 Mar  5 11:22  myfile2.txt
+-rw-rw-r-- 1 mits mits     148 Mar  5 11:17  myfile.txt
+-rw-rw-r-- 1 mits mits      10 Feb 17 13:25  number
+-rw-rw-r-- 1 mits mits      68 Feb 17 14:31  s1mca
+drwxrwxr-x 4 mits mits    4096 Feb 10 15:30  s2mca
+
+
+mits@mits-H610M-H-V2-DDR4:~$ chmod 777 myfile1.txt
+mits@mits-H610M-H-V2-DDR4:~$ ls -l
+drwxrwxr-x 2 mits mits    4096 Feb 20 11:47  mca
+-rw-rw-r-- 1 mits mits      18 Feb  6 14:16  mint
+-rwxrwxrwx 1 mits mits     148 Mar  5 11:22  myfile1.txt
+-rw-rw-r-- 1 mits mits     148 Mar  5 11:22  myfile2.txt
+-rw-rw-r-- 1 mits mits     148 Mar  5 11:17  myfile.txt
+-rw-rw-r-- 1 mits mits      10 Feb 17 13:25  number
+-rw-rw-r-- 1 mits mits      68 Feb 17 14:31  s1mca
+drwxrwxr-x 4 mits mits    4096 Feb 10 15:30  s2mca
+
+--------------------------------------------------------------------------------------------------------------------------
+
+mits@mits-H610M-H-V2-DDR4:~$ sudo useradd gokul
+[sudo] password for mits: 
+mits@mits-H610M-H-V2-DDR4:~$ cat /etc/passwd | grep gokul
+gokul:x:1003:1003::/home/gokul:/bin/sh
+mits@mits-H610M-H-V2-DDR4:~$ cat /etc/passwd | grep "gokul"
+gokul:x:1003:1003::/home/gokul:/bin/sh
+
+-------------------------------------------------------------------------------------------------------------------------------------
+
+mits@mits-H610M-H-V2-DDR4:~$ ls -l
+drwxrwxr-x 2 mits mits    4096 Feb 20 11:47  mca
+-rw-rw-r-- 1 mits mits      18 Feb  6 14:16  mint
+-rwxrwxrwx 1 mits mits     148 Mar  5 11:22  myfile1.txt
+-rw-rw-r-- 1 mits mits     148 Mar  5 11:22  myfile2.txt
+-rw-rw-r-- 1 mits mits     148 Mar  5 11:17  myfile.txt
+-rw-rw-r-- 1 mits mits      10 Feb 17 13:25  number
+-rw-rw-r-- 1 mits mits      68 Feb 17 14:31  s1mca
+drwxrwxr-x 4 mits mits    4096 Feb 10 15:30  s2mca
+
+mits@mits-H610M-H-V2-DDR4:~$ chown gokul myfile1.txt
+chown: changing ownership of 'myfile1.txt': Operation not permitted
+mits@mits-H610M-H-V2-DDR4:~$ sudo chown gokul myfile1.txt
+
+mits@mits-H610M-H-V2-DDR4:~$ ls -l
+drwxrwxr-x 2 mits  mits    4096 Feb 20 11:47  mca
+-rw-rw-r-- 1 mits  mits      18 Feb  6 14:16  mint
+-rwxrwxrwx 1 gokul mits     148 Mar  5 11:22  myfile1.txt
+-rw-rw-r-- 1 mits  mits     148 Mar  5 11:22  myfile2.txt
+-rw-rw-r-- 1 mits  mits     148 Mar  5 11:17  myfile.txt
+-rw-rw-r-- 1 mits  mits      10 Feb 17 13:25  number
+-rw-rw-r-- 1 mits  mits      68 Feb 17 14:31  s1mca
+drwxrwxr-x 4 mits  mits    4096 Feb 10 15:30  s2mca
+
+--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+mits@mits-H610M-H-V2-DDR4:~$ groupadd s2mca
+groupadd: Permission denied.
+groupadd: cannot lock /etc/group; try again later.
+mits@mits-H610M-H-V2-DDR4:~$ sudo groupadd s2mca
+mits@mits-H610M-H-V2-DDR4:~$ cat /etc/group | grep "s2mca"
+s2mca:x:1004:
+
+
+mits@mits-H610M-H-V2-DDR4:~$ cat /etc/passwd | tail -3
+mysql:x:128:136:MySQL Server,,,:/nonexistent:/bin/false
+exam:x:1002:1002:Exam,,,:/home/exam:/bin/bash
+gokul:x:1003:1003::/home/gokul:/bin/sh
+mits@mits-H610M-H-V2-DDR4:~$ cat /etc/group | tail -3
+exam:x:1002:
+gokul:x:1003:
+s2mca:x:1004:
+
+
+mits@mits-H610M-H-V2-DDR4:~$ groups mits
+mits : mits adm cdrom sudo dip plugdev lpadmin lxd sambashare
+
+
+mits@mits-H610M-H-V2-DDR4:~$ cat /etc/group | tail -3
+exam:x:1002:
+gokul:x:1003:
+s2mca:x:1004:
+mits@mits-H610M-H-V2-DDR4:~$ sudo groupmod -n s1mca s2mca
+[sudo] password for mits: 
+mits@mits-H610M-H-V2-DDR4:~$ cat /etc/group | tail -3
+exam:x:1002:
+gokul:x:1003:
+s1mca:x:1004:
+
+-----------------------------------------------------------------------------------------------------------------------------
+
+
+mits@mits-H610M-H-V2-DDR4:~$ id
+uid=1000(mits) gid=1000(mits) groups=1000(mits),4(adm),24(cdrom),27(sudo),30(dip),46(plugdev),122(lpadmin),134(lxd),135(sambashare)
+mits@mits-H610M-H-V2-DDR4:~$ 
+    PID TTY          TIME CMD
+   9099 pts/0    00:00:00 bash
+  11662 pts/0    00:00:00 
+mits@mits-H610M-H-V2-DDR4:~$ top
+
+top - 14:35:28 up  1:28,  1 user,  load average: 0.52, 0.44, 0.39
+Tasks: 337 total,   1 running, 336 sleeping,   0 stopped,   0 zombie
+%Cpu(s):  1.0 us,  0.7 sy,  0.0 ni, 98.2 id,  0.0 wa,  0.0 hi,  0.1 si,  0.0 st
+MiB Mem :   7714.6 total,    447.0 free,   3179.0 used,   4088.6 buff/cache
+MiB Swap:   2048.0 total,   2048.0 free,      0.0 used.   3508.2 avail Mem 
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------
+
+mits@mits-H610M-H-V2-DDR4:~$ du
+4	./snap/firefox/5783/.config/gtk-3.0
+4	./snap/firefox/5783/.config/ibus
+4	./snap/firefox/5783/.config/dconf
+4	./snap/firefox/5783/.config/gtk-2.0
+8	./snap/firefox/5783/.config/pulse
+8	./snap/firefox/5783/.config/fontconfig
+52	./snap/firefox/5783/.config
+4	./snap/firefox/5783/.local/share/icons
+4	./snap/firefox/5783/.local/share/glib-2.0/schemas
+8	./snap/firefox/5783/.local/share/glib-2.0
+24	./snap/firefox/5783/.local/share
+28	./snap/firefox/5783/.local
+88	./snap/firefox/5783
+4	./snap/firefox/5751/.config/gtk-3.0
+4	./snap/firefox/5751/.config/ibus
+4	./snap/firefox/5751/.config/dconf
+4	./snap/firefox/5751/.config/gtk-2.0
+
+
+
+mits@mits-H610M-H-V2-DDR4:~$ df
+Filesystem     1K-blocks     Used Available Use% Mounted on
+tmpfs             789976     2284    787692   1% /run
+/dev/sda5      216888480 16665692 189132664   9% /
+tmpfs            3949860        0   3949860   0% /dev/shm
+tmpfs               5120        4      5116   1% /run/lock
+efivarfs             256      125       127  50% /sys/firmware/efi/efivars
+/dev/sda1          98304    31816     66488  33% /boot/efi
+tmpfs             789972      108    789864   1% /run/user/1000
+
+
+
+mits@mits-H610M-H-V2-DDR4:~$ sudo groupdel s1mca
+mits@mits-H610M-H-V2-DDR4:~$ cat /etc/group | tail -3
+mysql:x:136:
+exam:x:1002:
+gokul:x:1003:
+
+
+mits@mits-H610M-H-V2-DDR4:~$ sudo userdel gokul
+mits@mits-H610M-H-V2-DDR4:~$ cat /etc/passwd | tail -3
+mca:x:1001:1001::/home/mca:/bin/sh
+mysql:x:128:136:MySQL Server,,,:/nonexistent:/bin/false
+exam:x:1002:1002:Exam,,,:/home/exam:/bin/bash
+
+
+
+mits@mits-H610M-H-V2-DDR4:~$ gedit sum.sh
+mits@mits-H610M-H-V2-DDR4:~$ bash sum.sh
+enter a and b
+4 5
+sum= 9
+
+   

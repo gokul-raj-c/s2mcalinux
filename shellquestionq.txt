@@ -1,0 +1,35 @@
+echo "enter a and b"
+read a b
+sum=$((a+b))
+echo "sum=" $sum
+
+--string length
+mystring="fherj"
+l=${#mystring}
+echo $i
+ 
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ a=gokul
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ i=${#a}
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ echo $i
+5
+
+--string concat
+str1="hdgh"
+str2="rgyhrye"
+str3="$str1$str2"
+echo $str3
+
+
+--replacing
+first="i drive a bmw and volvo"
+second="audi"
+echo "${first/BMW/"$second"}"
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ s1="i drive a bmw and volvo"
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ second="audi"
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ echo "${s1/bmw/"$second"}"
+i drive a audi and volvo
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ echo "${s1/bmw/"gokul"}"
+i drive a gokul and volvo
+

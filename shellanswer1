@@ -1,0 +1,157 @@
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash fact.sh
+enter number
+5
+factorial of 5 is 120
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash sample2.sh 3 4
+sum=7
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash primenum.sh
+Enter the number
+23
+23 is a prime.
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash primenum.sh
+Enter the number
+20
+20 is not a prime number.
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash pattern.sh
+enter limit
+4
+1 
+2 2 
+3 3 3 
+4 4 4 4 
+
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ cat file1
+hello
+hi
+welcome
+abc
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash dltline.sh
+Enter file name:file1
+Enter word to delete:hi
+File before removing hi:
+hello
+hi
+welcome
+abc
+File after removing hi:
+hello
+welcome
+abc
+
+
+
+
+mits@mits-H610M-H-V2-DDR4:~$ bash checkfile.sh s2mca
+s2mca is a directory
+mits@mits-H610M-H-V2-DDR4:~$ bash checkfile.sh circleq
+enter valid file
+mits@mits-H610M-H-V2-DDR4:~$ bash checkfile.sh circleq.sh
+circleq.sh is a file
+
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash dgsum.sh
+enter number
+562
+sum of digit=13
+
+
+
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash untileg.sh
+0
+1
+2
+3
+4
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash untileg2.sh
+n = 1 & sum of first n = 1
+n = 2 & sum of first n = 3
+n = 3 & sum of first n = 6
+n = 4 & sum of first n = 10
+n = 5 & sum of first n = 15
+n = 6 & sum of first n = 21
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash factusinguntil.sh
+enter number
+5
+factorial : 120
+
+
+
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash calculator.sh
+enter number 1
+10
+enter number 2
+4
+1.addition 
+2.substraction 
+3.multiplication 
+4.division 
+5.modulus
+choose operation
+1
+sum=14
+do you want to continue yes-0 / no-1
+0
+1.addition 
+2.substraction 
+3.multiplication 
+4.division 
+5.modulus
+choose operation
+2
+difference=6
+do you want to continue yes-0 / no-1
+0
+1.addition 
+2.substraction 
+3.multiplication 
+4.division 
+5.modulus
+choose operation
+3
+product=40
+do you want to continue yes-0 / no-1
+0
+1.addition 
+2.substraction 
+3.multiplication 
+4.division 
+5.modulus
+choose operation
+4
+quotient=2
+do you want to continue yes-0 / no-1
+0
+1.addition 
+2.substraction 
+3.multiplication 
+4.division 
+5.modulus
+choose operation
+5
+modulus=2
+do you want to continue yes-0 / no-1
+1
+
+
+
+
+
+
+
+
+
+
