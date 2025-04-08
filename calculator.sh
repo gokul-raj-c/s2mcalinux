@@ -9,7 +9,8 @@ echo "1.addition
 2.substraction 
 3.multiplication 
 4.division 
-5.modulus"
+5.modulus
+6.exit"
 echo "choose operation"
 read n
 case $n in
@@ -35,12 +36,11 @@ echo "modulus=$mod"
 ;;
 "6")
 echo "exit"
+s=1
 break;
 ;;
 *)
 echo -n "Invalid"
 ;;
 esac
-echo "do you want to continue yes-0 / no-1"
-read s
 done

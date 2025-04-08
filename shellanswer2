@@ -1,0 +1,84 @@
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash menudrivenpgm.sh
+1.sum of digit of number
+2.largest of two number
+3.sum of squares of digit of number
+4.exit
+choose operation
+1
+enter a number
+234
+sum of digit=9
+1.sum of digit of number
+2.largest of two number
+3.sum of squares of digit of number
+4.exit
+choose operation
+2
+enter number 1
+15
+enter number 2
+13
+15 is greater
+1.sum of digit of number
+2.largest of two number
+3.sum of squares of digit of number
+4.exit
+choose operation
+3
+enter a number
+123
+sum of squares of digit=14
+1.sum of digit of number
+2.largest of two number
+3.sum of squares of digit of number
+4.exit
+choose operation
+4
+exit
+
+----------------------------------------------------------------------------------------------------------------------------------------
+
+
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash menudrivenpgm2.sh
+items
+1.Puffs-Rs 20
+2.Bun-Rs 7
+3.Juice-Rs 10
+4.Generate Bill
+choose item
+1
+enter quantity
+3
+items
+1.Puffs-Rs 20
+2.Bun-Rs 7
+3.Juice-Rs 10
+4.Generate Bill
+choose item
+2
+enter quantity
+2
+items
+1.Puffs-Rs 20
+2.Bun-Rs 7
+3.Juice-Rs 10
+4.Generate Bill
+choose item
+3
+enter quantity
+3
+items
+1.Puffs-Rs 20
+2.Bun-Rs 7
+3.Juice-Rs 10
+4.Generate Bill
+choose item
+4
+BILL
+No of Puffs:3
+No of Buns:2
+No of Juice:3
+Total Amount:104
+
+
+

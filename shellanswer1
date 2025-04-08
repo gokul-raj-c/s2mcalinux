@@ -100,51 +100,56 @@ enter number 2
 3.multiplication 
 4.division 
 5.modulus
+6.exit
 choose operation
 1
 sum=14
-do you want to continue yes-0 / no-1
-0
 1.addition 
 2.substraction 
 3.multiplication 
 4.division 
 5.modulus
+6.exit
 choose operation
 2
 difference=6
-do you want to continue yes-0 / no-1
-0
 1.addition 
 2.substraction 
 3.multiplication 
 4.division 
 5.modulus
+6.exit
 choose operation
 3
 product=40
-do you want to continue yes-0 / no-1
-0
 1.addition 
 2.substraction 
 3.multiplication 
 4.division 
 5.modulus
+6.exit
 choose operation
 4
 quotient=2
-do you want to continue yes-0 / no-1
-0
 1.addition 
 2.substraction 
 3.multiplication 
 4.division 
 5.modulus
+6.exit
 choose operation
 5
 modulus=2
-do you want to continue yes-0 / no-1
-1
+1.addition 
+2.substraction 
+3.multiplication 
+4.division 
+5.modulus
+6.exit
+choose operation
+6
+exit
+
 
 
 
