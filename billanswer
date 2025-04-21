@@ -1,0 +1,54 @@
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash menudrivenpgm2.sh
+              FOOD MENU                 
+----------------------------------------
+ITEMS 
+1. Puffs  -20 Rs
+2. BUN  -7 Rs
+3. JUICE  -10 Rs
+choose item
+1
+Enter Quantity Of Puffs
+4
+do you have more items to order Yes-0 No-1
+0
+              FOOD MENU                 
+----------------------------------------
+ITEMS 
+1. Puffs  -20 Rs
+2. BUN  -7 Rs
+3. JUICE  -10 Rs
+choose item
+2
+Enter Quantity Of Bun
+2
+do you have more items to order Yes-0 No-1
+0
+              FOOD MENU                 
+----------------------------------------
+ITEMS 
+1. Puffs  -20 Rs
+2. BUN  -7 Rs
+3. JUICE  -10 Rs
+choose item
+3
+Enter Quantity Of of Juice
+4
+do you have more items to order Yes-0 No-1
+1
+------------------------------------------------------
+                     CAFE 24
+------------------------------------------------------
+ BILL 
+------------------------------------------------------
+ Item       Unit Price       Quantity       Price
+------------------------------------------------------
+ PUFFS      20 Rs            4              80 Rs
+ BUN        7 Rs             2              14 Rs
+ JUICE      20 Rs            4              40 Rs
+______________________________________________________
+ 
+TOTAL BILL AMOUNT: 134
+______________________________________________________
+THANK YOU FOR SHOPPING
+------------------------------------------------------
+
