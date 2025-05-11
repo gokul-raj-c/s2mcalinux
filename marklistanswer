@@ -1,0 +1,68 @@
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ bash marklist.sh
+enter no of students
+2
+enter student name
+gokul
+enter internal mark of IPR
+12
+enter external mark of IPR
+12
+enter internal mark of ADBMS
+13
+enter external mark of ADBMS
+13
+enter internal mark of OB
+14
+enter external mark of OB
+14
+enter internal mark of ACN
+15
+enter external mark of ACN
+15
+enter student name
+abhi
+enter internal mark of IPR
+21
+enter external mark of IPR
+21
+enter internal mark of ADBMS
+22
+enter external mark of ADBMS
+22
+enter internal mark of OB
+23
+enter external mark of OB
+23
+enter internal mark of ACN
+24
+enter external mark of ACN
+24
+
+
+                            Mark List          
+                           ***********         
+
+Name:gokul
+RegNo:MUTMCA1
+
+-------------------------------------------------------------------------------
+ Subject Name        Internal Mark        External Mark        Total Mark      
+ IPR                 12                   12                   24         
+ ADBMS               13                   13                   26       
+ OB                  14                   14                   28          
+ ACN                 15                   15                   30         
+
+                            Mark List          
+                           ***********         
+
+Name:abhi
+RegNo:MUTMCA2
+
+-------------------------------------------------------------------------------
+ Subject Name        Internal Mark        External Mark        Total Mark      
+ IPR                 21                   21                   42         
+ ADBMS               22                   22                   44       
+ OB                  23                   23                   46          
+ ACN                 24                   24                   48         
+mits@mits-H610M-H-V2-DDR4:~/gokul linux$ 
+
